@@ -1,0 +1,111 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom CSS for enhanced styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar {
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+  border-radius: 0.5rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control, .form-select {
+  border-radius: 0.5rem;
+}
+
+.badge {
+  font-size: 0.75em;
+}
+
+.roadmap-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.roadmap-card.completed::before {
+  content: '✓';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #198754;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.interview-card {
+  transition: all 0.3s ease;
+}
+
+.interview-card:hover {
+  border-left: 4px solid #0d6efd;
+}
+
+.dark-theme {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.dark-theme .card {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.dark-theme .content-area {
+  background-color: #1a1d20;
+}
+
+.dark-theme .sidebar {
+  background-color: #2d3235;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+  }
+  
+  .content-area {
+    min-height: auto;
+  }
+}
